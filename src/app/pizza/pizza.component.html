@@ -1,0 +1,16 @@
+<div class="container">
+    <img [src]="pizza.image" [alt]="pizza.pizzaName">
+
+ <div class="De">
+    <div class="header">
+        <span class="name">
+         Name: {{pizza.pizzaName}}
+        </span><br>
+        <span class="size">Id:{{pizza.pizzaId}}</span><br>
+     <span class="size">Size:{{pizza.pizzaSize}}</span><br>
+     <span class="price">Price:{{pizza.pizzaPrice}}</span>
+    </div>
+   
+      <button  (click)="addToCard()">Add cart</button>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<ul>
+    <li *ngFor="let cartItem of cart.items">
+        <div>
+            <img [src]="cartItem.pizzas.image" [alt]="cartItem.pizzas.pizzaName" style="height:200px;">
+        </div>
+
+ 
+
+
+        <div>
+           <!-- <a routerLink="/pizza/{{cartItem.pizzas.pizzaId}}">-->
+              {{cartItem.pizzas.pizzaName}}
+          
+        </div>
+        <div>
+           {{cartItem.pizzas.pizzaId}}
+        </div>
+        <div>
+            <select #quantitySelect (change)="changeQuantity(cartItem,quantitySelect.value)">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div>
+            {{cartItem.pizzas.pizzaPrice}}
+        </div>
+        <div>
+            <button   routerLink="/oder/{{cartItem.pizzas.pizzaId}}" >odder</button>
+            <button class="revome-button" routerLink="/pizza/{{cartItem.pizzas.pizzaId}}" (click)="removeFromCart(cartItem)">
+                remove
+            </button>
+        </div>
+    </li>
+
+</ul>
+
+<div *ngFor="let cartItem of cart.items" >
+ 
+</div>

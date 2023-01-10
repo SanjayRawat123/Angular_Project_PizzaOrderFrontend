@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+   
+    
+  
+}
+
+
+.container > *{
+
+    min-width: 25rem;
+    max-width: 40rem;
+    float: left;
+    
+}
+
+.De{
+ width:max-content;
+ display: flex;
+ flex-direction: column;
+ flex: 1 0;
+ border-radius: 2rem;
+ padding: 2rem;
+ color: black;
+}

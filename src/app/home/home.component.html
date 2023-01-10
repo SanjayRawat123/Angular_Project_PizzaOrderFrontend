@@ -1,0 +1,20 @@
+
+<app-username></app-username>
+<ul>
+    <li *ngFor="let p of pizza">
+        <a routerLink="/pizza/{{p.pizzaId}}">
+        <img src="{{p.image}}" alt="pizaa">
+        <br>
+
+        <div class="content">
+            <div class="name">
+              Name:{{p.pizzaName}}
+            </div>
+            <span>Id:{{p. pizzaId}}</span><br>
+            <span>Size: {{p.  pizzaSize}}</span><br>
+            <span>Price: {{p.  pizzaPrice}}</span><br>
+            <button>Add</button>
+        </div>
+    </a>
+    </li>
+</ul>

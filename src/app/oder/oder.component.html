@@ -1,0 +1,57 @@
+<mat-card>
+  <h1>Your Oder </h1>
+ <mat-card-content>
+     <div class="bootstrap-warapper">
+      <div class="row">
+          <div class="col-md-8 offset-md-2">
+
+<form   >
+                       
+    <mat-form-field class="W" appearance="outline">
+         <mat-label>pizzaName</mat-label>
+         <input type="text"
+           [(ngModel)]="pizza.pizzaName"
+          name="pizzaName"
+         matInput placeholder="enter here name">
+        </mat-form-field>
+                  
+   
+
+           <mat-form-field class="W" appearance="outline">
+            <mat-label>pizzaPrice</mat-label>
+            <input type="text"
+              [(ngModel)]="pizza.pizzaPrice"
+             name="pizzaPrice"
+            matInput placeholder="enter here price">
+           </mat-form-field>
+
+           <mat-form-field class="W" appearance="outline">
+            <mat-label>pizzaSize</mat-label>
+            <input type="text"
+              [(ngModel)]="pizza.pizzaSize"
+             name="pizzaSize"
+            matInput placeholder="enter here size">
+           </mat-form-field>
+
+
+           <div class="container text-center"  >
+
+            
+
+             <button  type="submit" mat-raised-button color="primary" (click)="postPizza(pizza)">Oder</button>
+
+             
+
+           </div>
+       
+
+
+     </form>
+
+    </div>
+  </div>
+ </div>
+
+</mat-card-content>
+
+</mat-card>
